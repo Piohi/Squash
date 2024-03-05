@@ -13,49 +13,29 @@ struct ContentView: View {
     @Query private var items: [Item]
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        TabView {
+            GameView(player1: Player(name: "Player1", color: Color.red), player2: Player(name: "Player2", color: Color.blue))
+                .tabItem { Label("Game", systemImage: "figure.squash")
                     }
-                }
-                .onDelete(perform: deleteItems)
+            Button("Undo") {
+                Void.self
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+            .tabItem { Label("Undo", systemImage: "arrow.uturn.backward")}
+                             
+            ResultView()
+                .tabItem() {
+                    Image(systemName: "list.clipboard")
+                    Text("Result")
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
+        }
+        .onAppear() {
+            UITabBar.appearance().backgroundColor = .white
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
-    }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+//        .modelContainer(for: Item.self, inMemory: true)
 }

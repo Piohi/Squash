@@ -12,6 +12,13 @@
 		AA70B0C72B9778C900B0AD15 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70B0C62B9778C900B0AD15 /* Item.swift */; };
 		AA70B0C92B9778CB00B0AD15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA70B0C82B9778CB00B0AD15 /* Assets.xcassets */; };
 		AA70B0CC2B9778CB00B0AD15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA70B0CB2B9778CB00B0AD15 /* Preview Assets.xcassets */; };
+		AA70B0D52B977A5500B0AD15 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70B0D42B977A5500B0AD15 /* SettingView.swift */; };
+		AA70B0D92B9782FB00B0AD15 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70B0D82B9782FB00B0AD15 /* GameView.swift */; };
+		AA70B0DB2B97830E00B0AD15 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70B0DA2B97830E00B0AD15 /* ResultView.swift */; };
+		AA70B0DD2B978DA400B0AD15 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70B0DC2B978DA400B0AD15 /* Game.swift */; };
+		AA70B0DF2B978F5D00B0AD15 /* Player1Sell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70B0DE2B978F5D00B0AD15 /* Player1Sell.swift */; };
+		AA70B0E12B97B59300B0AD15 /* CustomColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70B0E02B97B59300B0AD15 /* CustomColorPicker.swift */; };
+		AA70B0E32B97B97F00B0AD15 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70B0E22B97B97F00B0AD15 /* PlayerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,13 @@
 		AA70B0CB2B9778CB00B0AD15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA70B0CD2B9778CB00B0AD15 /* Squash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Squash.entitlements; sourceTree = "<group>"; };
 		AA70B0CE2B9778CB00B0AD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA70B0D42B977A5500B0AD15 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		AA70B0D82B9782FB00B0AD15 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		AA70B0DA2B97830E00B0AD15 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		AA70B0DC2B978DA400B0AD15 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		AA70B0DE2B978F5D00B0AD15 /* Player1Sell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player1Sell.swift; sourceTree = "<group>"; };
+		AA70B0E02B97B59300B0AD15 /* CustomColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPicker.swift; sourceTree = "<group>"; };
+		AA70B0E22B97B97F00B0AD15 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,13 @@
 			children = (
 				AA70B0C22B9778C900B0AD15 /* SquashApp.swift */,
 				AA70B0C42B9778C900B0AD15 /* ContentView.swift */,
+				AA70B0DA2B97830E00B0AD15 /* ResultView.swift */,
+				AA70B0DE2B978F5D00B0AD15 /* Player1Sell.swift */,
+				AA70B0D82B9782FB00B0AD15 /* GameView.swift */,
+				AA70B0E22B97B97F00B0AD15 /* PlayerModel.swift */,
+				AA70B0E02B97B59300B0AD15 /* CustomColorPicker.swift */,
+				AA70B0DC2B978DA400B0AD15 /* Game.swift */,
+				AA70B0D42B977A5500B0AD15 /* SettingView.swift */,
 				AA70B0C62B9778C900B0AD15 /* Item.swift */,
 				AA70B0C82B9778CB00B0AD15 /* Assets.xcassets */,
 				AA70B0CD2B9778CB00B0AD15 /* Squash.entitlements */,
@@ -144,9 +165,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA70B0E32B97B97F00B0AD15 /* PlayerModel.swift in Sources */,
 				AA70B0C52B9778C900B0AD15 /* ContentView.swift in Sources */,
+				AA70B0D52B977A5500B0AD15 /* SettingView.swift in Sources */,
+				AA70B0E12B97B59300B0AD15 /* CustomColorPicker.swift in Sources */,
 				AA70B0C72B9778C900B0AD15 /* Item.swift in Sources */,
+				AA70B0D92B9782FB00B0AD15 /* GameView.swift in Sources */,
+				AA70B0DB2B97830E00B0AD15 /* ResultView.swift in Sources */,
+				AA70B0DF2B978F5D00B0AD15 /* Player1Sell.swift in Sources */,
 				AA70B0C32B9778C900B0AD15 /* SquashApp.swift in Sources */,
+				AA70B0DD2B978DA400B0AD15 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,9 +325,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = aaase.Squash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,9 +360,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = aaase.Squash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
